@@ -27,21 +27,51 @@
     h1 {
       color: white;
     }
+    .header,
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .button-links-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .button-link {
+      background: none;
+      color: white;
+      border: 1px solid white;
+      border-radius: 1rem;
+      padding: 1rem;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      margin: 2rem;
+      width: 16rem;
+      transition: all 0.5s ease;
+    }
+    .button-link:hover {
+      padding: 2rem;
+      width: 18rem;
+    }
   </style>
 </head>
 <body>
-  <h1>~~~ Temporary Home Page ~~~</h1>
-  <p>List of projects hosted on leithosborne.com:</p>
-  <ul>
-    <li>
-      <a href="https://www.leithosborne.com/8-Puzzle/">
-        8 Piece Puzzle Problem
-      </a>
-    </li>
-    <li>
-      <a href="https://www.leithosborne.com/spotify-mosaic/">
-        Album Cover Mosaic
-      </a>
-    </li>
-  </ul>
+  <div class="header">
+    <h1>Leith Osborne</h1>
+  </div>
+  <p class="links">Links</p>
+  <div class="button-links-container">
+    <a href="https://www.leithosborne.com/8-Puzzle/"
+      ><button class="button-link">8 Piece Puzzle Problem</button>
+    </a>
+    <a href="https://www.leithosborne.com/spotify-mosaic/">
+      <button class="button-link">Album Cover Mosaic</button>
+    </a>
+    <a href="https://www.whattobringvote.com">
+      <button class="button-link">What to bring</button></a
+    >
+  </div>
 </body>
